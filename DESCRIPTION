@@ -1,0 +1,19 @@
+Package: RMDconverter
+Title: Converts Xaringan Slides Into Markdown Notes
+Version: 0.0.1
+Authors@R: 
+    person(given = "Hao",
+           family = "Ye",
+           role = c("aut", "cre"),
+           email = "hao.ye@weecology.org",
+           comment = c(ORCID = "0000-0002-8630-1458"))
+Description: Converts Xaringan Slides Into Markdown Notes
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: 
+    magrittr,
+    here,
+    rmarkdown
