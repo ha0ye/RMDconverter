@@ -1,9 +1,10 @@
 #'
 #' @importFrom utils tail
+#' @export
 process_slides <- function(slides_file = here::here("slides", "slides.Rmd"),
                            md_file = here::here("slides_temp.md"),
                            out_file = here::here("syllabus.md"),
-                           remove_md_temp = TRUE,
+                           clean = TRUE,
                            fix_image_paths = FALSE)
 {
     # convert slides into raw markdown
@@ -42,7 +43,7 @@ process_slides <- function(slides_file = here::here("slides", "slides.Rmd"),
     # write notes out
     writeLines(lines_to_write, out_file)
 
-    if (remove_md_temp)
+    if (clean)
     {
         unlink(md_file)
     }
