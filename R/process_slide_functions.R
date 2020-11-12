@@ -1,3 +1,5 @@
+#'
+#' @importFrom utils tail
 process_slides <- function(slides_file = here::here("slides", "slides.Rmd"),
                            md_file = here::here("slides_temp.md"),
                            out_file = here::here("syllabus.md"),
@@ -49,7 +51,7 @@ process_slides <- function(slides_file = here::here("slides", "slides.Rmd"),
 
 is_title_slide <- function(curr_slide, min_subheaders = 3)
 {
-    if (length(curr_slide) > length(dat))
+    if (min_subheaders > length(curr_slide))
         return(FALSE)
     num_subheaders <- sum(grepl("^#{2,4}", curr_slide))
     return(num_subheaders >= min_subheaders)

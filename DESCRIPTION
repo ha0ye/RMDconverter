@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "hao.ye@weecology.org",
            comment = c(ORCID = "0000-0002-8630-1458"))
-Description: Converts Xaringan Slides Into Markdown Notes
+Description: RMDconverter provides functions for converting the contents of various RMD files from one export-type to another. Currently, the only supported conversion is from **`xaringan`**-based slides to a markdown set of notes.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -17,3 +17,5 @@ Imports:
     magrittr,
     here,
     rmarkdown
+Suggests: 
+    testthat
