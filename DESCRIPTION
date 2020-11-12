@@ -16,6 +16,8 @@ RoxygenNote: 7.1.1
 Imports: 
     magrittr,
     here,
-    rmarkdown
+    rmarkdown,
+    xaringan,
+    xaringanthemer
 Suggests: 
     testthat
