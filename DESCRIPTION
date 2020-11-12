@@ -18,6 +18,7 @@ Imports:
     here,
     rmarkdown,
     xaringan,
-    xaringanthemer
+    xaringanthemer,
+    showtext
 Suggests: 
     testthat
