@@ -24,6 +24,15 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(RMDconverter)
-## basic example code
+
+slides_file <- system.file("extdata/test_slides.Rmd", package = "RMDconverter")
+md_file <- here::here("slides_temp.md")
+out_file <- here::here("test_out.md")
+
+process_slides(slides_file = slides_file, 
+               md_file = md_file,
+               out_file = out_file,
+               clean = FALSE)
 ```
+
 

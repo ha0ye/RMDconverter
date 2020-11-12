@@ -15,5 +15,5 @@ test_that("demo files work", {
     expect_known_hash(md_contents, "44f95394ac")
 
     out_contents <- readLines(out_file)
-    expect_known_hash(out_contents, "bab2aef0b9")
+    expect_known_hash(out_contents, "8aae52b74f")
 })
