@@ -53,12 +53,13 @@ process_slides <- function(slides_file = here::here("slides", "slides.Rmd"),
     return()
 }
 
-is_title_slide <- function(curr_slide, min_subheaders = 3)
+is_title_slide <- function(curr_slide, min_subheaders = 3, max_other_lines = 2)
 {
     if (min_subheaders > length(curr_slide))
         return(FALSE)
     num_subheaders <- sum(grepl("^#{2,4}", curr_slide))
-    return(num_subheaders >= min_subheaders)
+    return(num_subheaders >= min_subheaders &&
+               num_subheaders+max_other_lines >= length(curr_slide))
 }
 
 process_title_slide <- function(curr_slide)
