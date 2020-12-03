@@ -12,8 +12,10 @@ test_that("demo files work", {
                  NA)
 
     md_contents <- readLines(md_file)
-    expect_known_hash(md_contents, "44f95394ac")
+    expect_length(md_contents, 366)
+    expect_known_hash(md_contents, "5689d7cf49")
 
     out_contents <- readLines(out_file)
-    expect_known_hash(out_contents, "8aae52b74f")
+    expect_length(out_contents, 125)
+    expect_known_hash(out_contents, "fc4893fe2f")
 })
