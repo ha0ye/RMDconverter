@@ -1,6 +1,6 @@
 Package: RMDconverter
 Title: Converts Xaringan Slides Into Markdown Notes
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: 
     person(given = "Hao",
            family = "Ye",
