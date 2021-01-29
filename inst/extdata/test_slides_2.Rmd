@@ -47,7 +47,7 @@ class: inverse, center, middle
 # `r desc::desc_get('Title', '..')`
 ### `r rmarkdown::metadata$author`
 ### `r rmarkdown::metadata$institute`
-### (updated: `r Sys.Date()`)
+### (updated: 2021-01-28)
 
 ---
 class: inverse, center, middle

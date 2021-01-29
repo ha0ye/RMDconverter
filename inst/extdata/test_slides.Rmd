@@ -46,7 +46,7 @@ class: inverse, center, middle
 # `r rmarkdown::metadata$title`
 ### `r rmarkdown::metadata$author`
 ### `r rmarkdown::metadata$institute`
-### (updated: `r Sys.Date()`)
+### (updated: 2021-01-28)
 
 ---
 # Motivations
