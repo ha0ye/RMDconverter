@@ -27,19 +27,8 @@ process_slides <- function(slides_file = here::here("slides", "slides.Rmd"),
     for (i in seq(NROW(slide_starts)))
     {
         curr_slide <- dat[seq(slide_starts[i], slide_ends[i])]
-
-        if (is_title_slide(curr_slide))
-        {
-            lines_to_write <- c(process_title_slide(curr_slide),
-                                "## Intro")
-        } else if (is_ending_slide(curr_slide)) {
-            lines_to_write <- c(lines_to_write, process_ending_slide(curr_slide))
-        } else if (is_section_slide(curr_slide)) {
-            lines_to_write <- c(lines_to_write, process_section_slide(curr_slide))
-        } else {
-            lines_to_write <- c(lines_to_write, process_content_slide(curr_slide,
-                                                                      fix_image_paths = fix_image_paths))
-        }
+        lines_to_write <- c(lines_to_write,
+                            process_slide(curr_slide))
     }
 
     # write notes out
@@ -51,6 +40,21 @@ process_slides <- function(slides_file = here::here("slides", "slides.Rmd"),
         unlink(md_file)
     }
     return()
+}
+
+process_slide <- function(curr_slide, fix_image_paths = FALSE)
+{
+    if (is_title_slide(curr_slide))
+    {
+        return(c(process_title_slide(curr_slide), "## Intro"))
+    } else if (is_ending_slide(curr_slide)) {
+        return(process_ending_slide(curr_slide))
+    } else if (is_section_slide(curr_slide)) {
+        return(process_section_slide(curr_slide))
+    }
+    # else
+    process_content_slide(curr_slide,
+                          fix_image_paths = fix_image_paths)
 }
 
 is_title_slide <- function(curr_slide, min_subheaders = 3, max_other_lines = 2)
@@ -91,7 +95,8 @@ process_section_slide <- function(curr_slide)
     curr_slide %>%
         remove_slide_break() %>%
         remove_slide_formatting() %>%
-        convert_slide_title("## ")
+        increment_header_depth() %>%
+        replace_html_line_break()
 }
 
 process_content_slide <- function(curr_slide, fix_image_paths = FALSE)
@@ -104,5 +109,7 @@ process_content_slide <- function(curr_slide, fix_image_paths = FALSE)
         remove_blank_lines() %>%
         modify_image_paths(run = fix_image_paths) %>%
         fix_html_chars() %>%
-        remove_extra_formatting()
+        remove_extra_formatting() %>%
+        replace_html_line_break() %>%
+        remove_extra_p_tags()
 }
