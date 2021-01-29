@@ -2,7 +2,7 @@
 title: "Using GitHub for Collaboration"
 author: "Hao Ye"
 institute: "Health Science Center Libraries, University of Florida"
-date: "(updated: `r Sys.Date()`)"
+date: "2021-01-28"
 output:
   xaringan::moon_reader:
     lib_dir: libs
