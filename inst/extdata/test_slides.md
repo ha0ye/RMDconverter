@@ -57,7 +57,7 @@ class: inverse, center, middle
   - `Invite a collaborator`
 
 ---
-&lt;img src="github-manage-access.png" title="A screenshot of the website https://github.com/ha0ye/portalDS/settings/access, showing that the repo is visible to the public, and that only the owner can contribute to the repository. There is a green button with the text 'Invite a collaborator'." alt="A screenshot of the website https://github.com/ha0ye/portalDS/settings/access, showing that the repo is visible to the public, and that only the owner can contribute to the repository. There is a green button with the text 'Invite a collaborator'." width="2301" /&gt;
+&lt;img src="github-manage-access.png" title="A screenshot of the website https://github.com/ha0ye/portalDS/settings/access, showing that the repo is visible to the public, and that only the owner can contribute to the repository. There is a green button with the text 'Invite a collaborator'." alt="A screenshot of the website https://github.com/ha0ye/portalDS/settings/access, showing that the repo is visible to the public, and that only the owner can contribute to the repository. There is a green button with the text 'Invite a collaborator'."  /&gt;
 
 ---
 # A Simple Workflow
@@ -72,7 +72,7 @@ Two people, A and B, are working together on one repo in GitHub:
 
 You get a warning when you try to push to GitHub.
 
-&lt;img src="newer-commits-warning.png" title="A screenshot of the warning from using GitHub Desktop when trying to push new commits to GitHub, and there are commits on GitHub that have not yet been fetched and merged locally. The warning reads 'Newer Commits on Remote; Desktop is unable to push commits to this branch because there are commits on the remote that are not present on your local branch. Fetch these new commits before pushing in order to reconcile them with your local commits.'" alt="A screenshot of the warning from using GitHub Desktop when trying to push new commits to GitHub, and there are commits on GitHub that have not yet been fetched and merged locally. The warning reads 'Newer Commits on Remote; Desktop is unable to push commits to this branch because there are commits on the remote that are not present on your local branch. Fetch these new commits before pushing in order to reconcile them with your local commits.'" width="1648" /&gt;
+&lt;img src="newer-commits-warning.png" title="A screenshot of the warning from using GitHub Desktop when trying to push new commits to GitHub, and there are commits on GitHub that have not yet been fetched and merged locally. The warning reads 'Newer Commits on Remote; Desktop is unable to push commits to this branch because there are commits on the remote that are not present on your local branch. Fetch these new commits before pushing in order to reconcile them with your local commits.'" alt="A screenshot of the warning from using GitHub Desktop when trying to push new commits to GitHub, and there are commits on GitHub that have not yet been fetched and merged locally. The warning reads 'Newer Commits on Remote; Desktop is unable to push commits to this branch because there are commits on the remote that are not present on your local branch. Fetch these new commits before pushing in order to reconcile them with your local commits.'"  /&gt;
 
 ---
 # Merging
@@ -97,7 +97,7 @@ You get a warning when you try to push to GitHub.
 # Resolving merge conflicts
 
 * when git cannot combine the changes automatically, you must manually create the merged file:
-&lt;img src="merge-conflict.png" title="A screenshot of BBedit showing the merge conflict. Line 6 is '&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD'`' indicating the start of one version of the file. Line 8 is '=======' indicating the end of one version and the beginning of the next. Line 10 shows '&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;' followed by a hash, indicating the end of the second version." alt="A screenshot of BBedit showing the merge conflict. Line 6 is '&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD'`' indicating the start of one version of the file. Line 8 is '=======' indicating the end of one version and the beginning of the next. Line 10 shows '&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;' followed by a hash, indicating the end of the second version." width="1437" /&gt;
+&lt;img src="merge-conflict.png" title="A screenshot of BBedit showing the merge conflict. Line 6 is '&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD'`' indicating the start of one version of the file. Line 8 is '=======' indicating the end of one version and the beginning of the next. Line 10 shows '&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;' followed by a hash, indicating the end of the second version." alt="A screenshot of BBedit showing the merge conflict. Line 6 is '&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD'`' indicating the start of one version of the file. Line 8 is '=======' indicating the end of one version and the beginning of the next. Line 10 shows '&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;' followed by a hash, indicating the end of the second version."  /&gt;
 
 ---
 # Resolving merge conflicts 2
@@ -122,7 +122,7 @@ class: inverse, center, middle
 
 Manage work using branches - `merge` branches back to the primary branch when ready.
 
-&lt;img src="github-flow.png" title="A screenshot of the diagram from https://guides.github.com/introduction/flow/, showing conceptually how the 'GitHub flow' workflow works." alt="A screenshot of the diagram from https://guides.github.com/introduction/flow/, showing conceptually how the 'GitHub flow' workflow works." width="2029" /&gt;
+&lt;img src="github-flow.png" title="A screenshot of the diagram from https://guides.github.com/introduction/flow/, showing conceptually how the 'GitHub flow' workflow works." alt="A screenshot of the diagram from https://guides.github.com/introduction/flow/, showing conceptually how the 'GitHub flow' workflow works."  /&gt;
 
 ---
 # Steps
@@ -159,7 +159,7 @@ class: inverse, center, middle
 ---
 # Creating new branches (GitHub)
 
-&lt;img src="github-new-branch.png" title="screenshot of the GitHub interface, when clicking on the pulldown menu to switch branches; this interface also enables one to create new branches." alt="screenshot of the GitHub interface, when clicking on the pulldown menu to switch branches; this interface also enables one to create new branches." width="1773" /&gt;
+&lt;img src="github-new-branch.png" title="screenshot of the GitHub interface, when clicking on the pulldown menu to switch branches; this interface also enables one to create new branches." alt="screenshot of the GitHub interface, when clicking on the pulldown menu to switch branches; this interface also enables one to create new branches."  /&gt;
 
 ---
 class: center, middle
@@ -169,10 +169,7 @@ class: center, middle
 ---
 # Creating new branches (GitHub Desktop)
 
-&lt;div class="figure"&gt;
-&lt;img src="github-desktop-new-branch.png" alt="screenshot of the GitHub Desktop interface, when clicking on the pulldown menu to switch branches; this interface also enables one to create new branches." width="1928" /&gt;
-&lt;p class="caption"&gt;screenshot of the GitHub Desktop interface, when clicking on the pulldown menu to switch branches; this interface also enables one to create new branches.&lt;/p&gt;
-&lt;/div&gt;
+![screenshot of the GitHub Desktop interface, when clicking on the pulldown menu to switch branches; this interface also enables one to create new branches.](github-desktop-new-branch.png)
 
 ---
 class: center, middle
