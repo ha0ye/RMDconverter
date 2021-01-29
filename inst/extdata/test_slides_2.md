@@ -4,6 +4,7 @@
     <title>Converts Xaringan Slides Into Markdown Notes</title>
     <meta charset="utf-8" />
     <meta name="author" content="Hao Ye" />
+    <meta name="date" content="2021-01-28" />
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
   <body>

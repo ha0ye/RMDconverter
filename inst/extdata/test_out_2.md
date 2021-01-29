@@ -8,7 +8,7 @@
 ### "Any fool can write code that a computer can understand.   
 Good programmers write code that humans can understand."
 
-&lt;p style="text-align:right"&gt;from "Refactoring: Improving the Design of Existing Code" by Martin Fowler&lt;/p&gt;
+from "Refactoring: Improving the Design of Existing Code" by Martin Fowler
 
 * Motivations
   * In addition to code that works, ideally it is **also**:

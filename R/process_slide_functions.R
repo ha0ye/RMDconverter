@@ -96,7 +96,8 @@ process_section_slide <- function(curr_slide)
         remove_slide_break() %>%
         remove_slide_formatting() %>%
         increment_header_depth() %>%
-        replace_html_line_break()
+        replace_html_line_break() %>%
+        remove_extra_p_tags()
 }
 
 process_content_slide <- function(curr_slide, fix_image_paths = FALSE)
