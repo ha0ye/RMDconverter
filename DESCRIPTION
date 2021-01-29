@@ -17,8 +17,8 @@ Imports:
     knitr (>= 1.31),
     magrittr,
     here,
-    rmarkdown,
-    xaringan,
+    rmarkdown (>= 2.5),
+    xaringan (>= 0.19),
     xaringanthemer,
     showtext
 Suggests: 
